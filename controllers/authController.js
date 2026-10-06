@@ -118,11 +118,7 @@ const loginUser = async (req, res) => {
 };
 
 const loginWithDemoOtp = async (req, res) => {
-    if (process.env.NODE_ENV === 'production') {
-        return res.status(404).json({
-            message: 'Demo OTP login is not available',
-        });
-    }
+    
 
     const { mobile, otp } = req.body || {};
     const normalizedMobile = typeof mobile === 'string' ? mobile.trim() : '';
