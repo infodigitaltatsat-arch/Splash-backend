@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Local credentials and tokens
+token.md
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Generated output and test coverage
+dist/
+coverage/
+
+# Local/editor files
+*.local
+.DS_Store
+.idea/
+.vscode/
