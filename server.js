@@ -26,8 +26,9 @@ app.get('/',(req,res)=>{
 
 connectDB();
 
+
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, ()=>{
-    console.log(`server is listening on port ${PORT} http://localhost:5000`)
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Server is running on port ${PORT}`);
 });
